@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="si">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#07152b" />
+  <link rel="manifest" href="manifest.webmanifest" />
+  <link rel="icon" href="icon-192.png" />
+  <link rel="stylesheet" href="styles.css" />
+  <title>A/L ICT පාඩම 02 — Offline Recall</title>
+</head>
+<body>
+  <header class="topbar">
+    <div><h1>A/L ICT පාඩම 02</h1><p>Offline Active Recall • නිපුණතාව 2.1–2.4</p></div>
+    <div class="actions"><button id="backupBtn">💾 Backup</button><button id="restoreBtn">♻️ Restore</button><button id="resetBtn" class="danger">Reset</button></div>
+  </header>
+  <main>
+    <section id="stats" class="stats"></section>
+    <section class="toolbar">
+      <input id="search" placeholder="ප්‍රශ්න සොයන්න..." />
+      <select id="sectionFilter"><option value="all">සියලු කොටස්</option><option value="2.1">2.1</option><option value="2.2">2.2</option><option value="2.3">2.3</option><option value="2.4">2.4</option></select>
+    </section>
+    <nav class="tabs"><button data-tab="questions" class="active">📚 ප්‍රශ්න</button><button data-tab="saved">🔖 සුරැකි</button><button data-tab="folders">📁 ෆෝල්ඩර්</button></nav>
+    <section id="content"></section>
+  </main>
+  <div id="modal" class="modal hidden"><div class="modal-card"><button id="closeModal" class="close">✕</button><div id="modalBody"></div></div></div>
+  <script src="questions.js"></script><script src="app.js"></script>
+</body>
+</html>
