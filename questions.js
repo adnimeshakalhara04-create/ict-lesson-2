@@ -1,0 +1,1 @@
+window.QUESTIONS=[...window.Q21,...window.Q22,...window.Q23,...window.Q24];
