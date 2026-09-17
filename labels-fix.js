@@ -1,0 +1,1 @@
+(()=>{const labels={backup:"💾 Backup",restore:"🛟 Restore",reset:"♻️ Reset"};const apply=()=>{for(const[id,text]of Object.entries(labels)){const el=document.getElementById(id);if(el&&el.textContent!==text)el.textContent=text}};new MutationObserver(apply).observe(document.body,{childList:true,subtree:true});apply()})();
